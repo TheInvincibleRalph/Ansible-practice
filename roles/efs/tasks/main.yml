@@ -1,8 +1,5 @@
 ---
-- name: Create EFS File System
-  ec2_efs:
-    state: present
-    performance_mode: generalPurpose
-    tags:
-      Name: my-efs
-  register: efs
+- name: Create a local directory for EFS
+  file:
+    path: /mnt/efs
+    state: directory

@@ -1,7 +1,6 @@
 ---
 - hosts: localhost
   roles:
-    - ec2
     - efs
     - mysql
     - apache
